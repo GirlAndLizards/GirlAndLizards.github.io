@@ -63,6 +63,7 @@ section h3.section-subheading {
 .btn {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
+  color: black;
 }
 
 .btn-xl {
@@ -71,14 +72,14 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #f25ed2;
+  border-color: #f25ed2;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
-  color: white;
+  background-color: #ED1ABF !important;
+  border-color: #ED1ABF !important;
+  color: black;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -167,11 +168,21 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/bg-header.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+}
+
+.special-card {
+/* create a custom class so you
+   do not run into specificity issues
+   against bootstraps styles
+   which tends to work better than using !important
+   (future you will thank you later)*/
+
+  background-color: rgba(0, 0, 0, .7);
 }
 
 header.masthead .intro-text {
